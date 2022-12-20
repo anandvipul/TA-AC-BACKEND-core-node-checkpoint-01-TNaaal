@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Form</title>
+        <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+        <style>
+            html {
+                background-color: black;
+            }
+            h1 {
+                font-size: 4rem;
+                background: -webkit-linear-gradient(right, darkblue, darkorchid);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+            label,
+            input {
+                font-size: 2rem;
+                font-weight: 700;
+                background: -webkit-linear-gradient(right, darkblue, darkorchid);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+
+            }
+            input {
+                margin-bottom: 1rem;
+                border-style: solid;
+                border-width: 1px;
+                border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+                padding: 0.5rem;
+
+            }
+
+            form {
+                width: 70%;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            fieldset {
+
+                border-style: solid;
+                border-width: 4px;
+                border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+
+            }
+            fieldset legend {
+                font-size: 2rem;
+                background: -webkit-linear-gradient(right, darkblue, darkorchid);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="title-div">
+                <h3>Vigor</h3>
+            </div>
+            <div class="nav-div">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="pages/form.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1>Form</h1>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="username">Username:</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label for="age">Age:</label><br>
+                <input type="text" name="age" id="age"><br>
+                <label for="bio">Bio:</label><br>
+                <input type="text" name="bio" id="bio"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
