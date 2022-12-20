@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Form</title>
+        <style>
+            h1 {
+                font-size: 72px;
+                background: -webkit-linear-gradient(left,  darkblue, darkorchid);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+            }
+            label, input {
+                font-size: 2rem;
+                font-weight: 700;
+                background: -webkit-linear-gradient(darkblue, darkorchid);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+            input {
+                margin-bottom: 1rem;
+                border-style: solid;
+                border-width: 1px;
+                border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+                padding: 0.5rem;
+            }
+            
+
+            form {
+                width: 70%;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            fieldset {
+                
+                border-style: solid;
+                border-width: 4px;
+                border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="username">Username:</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label for="age">age:</label><br>
+                <input type="text" name="age" id="age"><br>
+                <label for="bio">Bio:</label><br>
+                <input type="text" name="bio" id="bio"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
